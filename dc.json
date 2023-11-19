@@ -95,6 +95,10 @@
         {
             "url": "http://dxawi.github.io/0/0.json",
             "name": "🚀dxawi线路"
+        },
+        {
+            "url":"https://bitbucket.org/xduo/duoapi/raw/master/xpg.json",
+            "name":"🚀小苹果",
         }
     ]
 }
