@@ -1,4 +1,4 @@
-//23.11.19 删除小苹果源
+//23.11.19 删除小苹果源 蜜蜂源
 {
     "urls": [
         {
@@ -24,10 +24,6 @@
         {
             "url": "https://ghproxy.net/https://raw.githubusercontent.com//yydfys/yydf/main/XYQTVBox/xyq.json",
             "name": "🚀香雅情镜像线路"
-        },
-        {
-            "url": "https://xn--3d2a1b.eu.org/",
-            "name": "🚀蜂蜜线路-推荐"
         },
         {
             "url": "https://gh-proxy.com/raw.githubusercontent.com/PizazzGY/TVBox/main/api.json",
