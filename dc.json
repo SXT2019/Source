@@ -1,23 +1,15 @@
 {
     "urls": [
         {
-            "url": "https://gh-proxy.com/https://raw.githubusercontent.com/w1915591935/TVBOX-/main/TVBox/一木自用.json",
-            "name": "🍎一木主停用"
-        },
-        {
-            "url": "http://gitcdn.top/https://raw.githubusercontent.com/xianyuyimu/TVBOX-/main/TVBox/备用.json",
-            "name": "🍎一木备停用"
-        },
-        {
             "url": "http://饭太硬.top/tv",
-            "name": "🚀饭太硬推荐"
+            "name": "🚀饭太硬-推荐"
         },{
             "url": "http://xhww.fun:63/小米/DEMO.json",
-            "name": "🚀小米推荐"
+            "name": "🚀小米-推荐"
         },
         {
             "url": "http://fan.xxooo.cf/tv",
-            "name": "🚀饭太硬备用"
+            "name": "🚀饭太硬-备用"
         },
         {
             "url": "https://gh-proxy.com/https://raw.githubusercontent.com/guot55/YGBH/main/vip2.json",
@@ -29,7 +21,7 @@
         },
         {
             "url": "https://xn--3d2a1b.eu.org/",
-            "name": "🚀蜂蜜线路推荐"
+            "name": "🚀蜂蜜线路-推荐"
         },
         {
             "url": "https://gh-proxy.com/raw.githubusercontent.com/PizazzGY/TVBox/main/api.json",
@@ -53,7 +45,7 @@
         },
         {
             "url": "https://weixine.net/ysc.json",
-            "name": "🚀运输车路"
+            "name": "🚀运输车线路-推荐"
         },
         {
             "url": "http://rihou.cc:99/荷城茶秀",
