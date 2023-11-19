@@ -1,4 +1,6 @@
-//23.11.19 删除小苹果源 蜜蜂源 大眼仔源
+//23.11.19 
+//添加：玄竹影视源
+//删除：小苹果源 蜜蜂源 大眼仔源 
 {
     "urls": [
         {
@@ -20,6 +22,10 @@
         {
             "url":"http://yydsys.top/duo/ali",
             "name":"🚀阿里精品-推荐"
+        },
+        {
+            "url":"http://ystv.aiyinch.cn/wl/xzjk/xz.json",
+            "name":"🚀玄竹影视-推荐"
         },
         {
             "url": "https://ghproxy.net/https://raw.githubusercontent.com//yydfys/yydf/main/XYQTVBox/xyq.json",
