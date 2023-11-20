@@ -1,5 +1,5 @@
 //23.11.20
-//新增：多多源
+//新增：多多源 俊于源
 
 //23.11.19 
 //新增：玄竹影视源
@@ -11,12 +11,20 @@
             "name": "🚀饭太硬-推荐"
         },
         {
+            "url": "https://weixine.net/ysc.json",
+            "name": "🚀运输车线路-推荐"
+        },
+        {
             "url": "http://xhww.fun:63/小米/DEMO.json",
             "name": "🚀小米-推荐"
         },
         {
             "url": "http://fan.xxooo.cf/tv",
             "name": "🚀饭太硬-备用"
+        },
+        {
+            "url":"http://home.jundie.top:81/top98.json",
+            "name":"🚀俊于线路-推荐"
         },
         {
             "url": "https://gh-proxy.com/https://raw.githubusercontent.com/guot55/YGBH/main/vip2.json",
@@ -57,10 +65,6 @@
         {
             "url": "http://t.84jia.com:80/tvbox/tvbox.json",
             "name": "🚀小鱼线路"
-        },
-        {
-            "url": "https://weixine.net/ysc.json",
-            "name": "🚀运输车线路-推荐"
         },
         {
             "url": "http://rihou.cc:99/荷城茶秀",
