@@ -9,15 +9,11 @@
     "urls": [
         {
             "url": "http://饭太硬.top/tv",
-            "name": "🚀饭太硬-推荐"
+            "name": "🚀饭太硬-推荐Plus"
         },
         {
             "url": "https://weixine.net/ysc.json",
-            "name": "🚀运输车线路-推荐"
-        },
-        {
-            "url": "http://fan.xxooo.cf/tv",
-            "name": "🚀饭太硬-备用"
+            "name": "🚀运输车线路-推荐Plus"
         },
         {
             "url":"http://home.jundie.top:81/top98.json",
@@ -42,6 +38,10 @@
         {
             "url": "https://gh-proxy.com/https://raw.githubusercontent.com/guot55/YGBH/main/vip2.json",
             "name": "🚀宝盒线路-次推荐"
+        },
+        {
+            "url": "http://fan.xxooo.cf/tv",
+            "name": "🚀饭太硬-备用"
         },
         {
             "url": "https://ghproxy.net/https://raw.githubusercontent.com//yydfys/yydf/main/XYQTVBox/xyq.json",
