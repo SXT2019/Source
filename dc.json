@@ -1,5 +1,6 @@
 //23.11.20
 //新增：多多源 俊于源
+//降低权重：小米源
 
 //23.11.19 
 //新增：玄竹影视源
@@ -15,20 +16,12 @@
             "name": "🚀运输车线路-推荐"
         },
         {
-            "url": "http://xhww.fun:63/小米/DEMO.json",
-            "name": "🚀小米-推荐"
-        },
-        {
             "url": "http://fan.xxooo.cf/tv",
             "name": "🚀饭太硬-备用"
         },
         {
             "url":"http://home.jundie.top:81/top98.json",
             "name":"🚀俊于线路-推荐"
-        },
-        {
-            "url": "https://gh-proxy.com/https://raw.githubusercontent.com/guot55/YGBH/main/vip2.json",
-            "name": "🚀宝盒线路"
         },
         {
             "url":"https://yydsys.top/duo",
@@ -41,6 +34,14 @@
         {
             "url":"http://ystv.aiyinch.cn/wl/xzjk/xz.json",
             "name":"🚀玄竹影视-推荐"
+        },
+        {
+            "url": "http://www.lyyytv.cn/yt/yt.json",
+            "name": "🚀影探线路-次推荐"
+        },
+        {
+            "url": "https://gh-proxy.com/https://raw.githubusercontent.com/guot55/YGBH/main/vip2.json",
+            "name": "🚀宝盒线路-次推荐"
         },
         {
             "url": "https://ghproxy.net/https://raw.githubusercontent.com//yydfys/yydf/main/XYQTVBox/xyq.json",
@@ -99,8 +100,8 @@
             "name": "🚀神器线路"
         },
         {
-            "url": "http://www.lyyytv.cn/yt/yt.json",
-            "name": "🚀影探线路"
+            "url": "http://xhww.fun:63/小米/DEMO.json",
+            "name": "🚀小米"
         },
         {
             "url": "http://dxawi.github.io/0/0.json",
