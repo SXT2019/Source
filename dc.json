@@ -1,4 +1,3 @@
-// 更新日志：https://gh-proxy.com/https://raw.githubusercontent.com/Ulinuxs/tvboxsource/main/README.md
 {
     "urls": [
         {
@@ -18,12 +17,12 @@
             "name":"🚀多多线路-推荐"
         },
         {
-            "url":"http://yydsys.top/duo/ali",
-            "name":"🚀多多阿里-推荐"
-        },
-        {
             "url":"http://ystv.aiyinch.cn/wl/xzjk/xz.json",
             "name":"🚀玄竹影视-推荐"
+        },
+        {
+            "url": "http://rihou.cc:99/荷城茶秀",
+            "name": "🚀荷城茶秀线路-推荐"
         },
         {
             "url": "http://www.lyyytv.cn/yt/yt.json",
@@ -32,6 +31,18 @@
         {
             "url": "https://gh-proxy.com/https://raw.githubusercontent.com/guot55/YGBH/main/vip2.json",
             "name": "🚀宝盒线路-次推荐"
+        },
+        {
+            "url":"http://yydsys.top/duo/ali",
+            "name":"☁多多线路-阿里网盘"
+        },
+        {
+            "url": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/XYQ.json",
+            "name": "☁高天流云 XYQ-阿里网盘"
+        },
+        {
+            "url": "https://神器每日推送.tk/pz.json",
+            "name": "🚀神器线路-饭太硬备用"
         },
         {
             "url": "http://fan.xxooo.cf/tv",
@@ -62,16 +73,8 @@
             "name": "🚀小鱼线路"
         },
         {
-            "url": "http://rihou.cc:99/荷城茶秀",
-            "name": "🚀荷城茶秀线路"
-        },
-        {
             "url": "https://100km.top/0",
             "name": "🚀骚 0线路"
-        },
-        {
-            "url": "https://gh-proxy.com/raw.githubusercontent.com/lm317379829/PyramidStore/pyramid/py.json",
-            "name": "🚀霜辉月明 py"
         },
         {
             "url": "https://tvbox.cainisi.cf",
@@ -82,24 +85,20 @@
             "name": "🚀高天流云js"
         },
         {
-            "url": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/XYQ.json",
-            "name": "🚀高天流云 XYQ"
-        },
-        {
             "url": "https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json",
             "name": "🚀南风"
         },
         {
-            "url": "https://神器每日推送.tk/pz.json",
-            "name": "🚀神器线路"
+            "url": "http://dxawi.github.io/0/0.json",
+            "name": "🚀dxawi线路"
         },
         {
             "url": "http://xhww.fun:63/小米/DEMO.json",
             "name": "🚀小米"
         },
         {
-            "url": "http://dxawi.github.io/0/0.json",
-            "name": "🚀dxawi线路"
+            "url": "https://gh-proxy.com/raw.githubusercontent.com/lm317379829/PyramidStore/pyramid/py.json",
+            "name": "🚀霜辉月明 py"
         }
     ]
 }
