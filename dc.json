@@ -1,3 +1,18 @@
+//23.11.24
+//新增：春盈天下线路
+//删除：酷安潇洒哥线路
+
+//23.11.22
+//注明阿里云盘线路
+//降低权重：霜辉月明py 巧计线路 FongMI线路
+
+//23.11.20
+//新增：多多源 俊于源
+//降低权重：小米源
+
+//23.11.19 
+//新增：玄竹影视源
+//删除：小苹果源 蜜蜂源 大眼仔源 
 {
     "urls": [
         {
@@ -53,10 +68,6 @@
             "name": "🚀香雅情镜像线路"
         },
         {
-            "url": "https://gh-proxy.com/raw.githubusercontent.com/PizazzGY/TVBox/main/api.json",
-            "name": "🚀酷安潇洒哥线路"
-        },
-        {
             "url": "https://gh-proxy.com/https://raw.githubusercontent.com/lxhfans/TV/master/tv.txt",
             "name": "🚀乐享汇线路"
         },
@@ -85,20 +96,24 @@
             "name": "🚀dxawi线路"
         },
         {
+            "url": "https://wds.ecsxs.com/230989.json",
+            "name": "🚀春盈天下线路"
+        },
+        {
             "url": "http://xhww.fun:63/小米/DEMO.json",
-            "name": "🚀小米"
+            "name": "小米"
         },
         {
             "url": "https://gh-proxy.com/raw.githubusercontent.com/lm317379829/PyramidStore/pyramid/py.json",
-            "name": "🚀霜辉月明 py"
+            "name": "霜辉月明 py"
         },
         {
             "url": "https://gh-proxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json",
-            "name": "🚀FongMI线路"
+            "name": "FongMI线路"
         },
         {
             "url": "http://pandown.pro/tvbox/tvbox.json",
-            "name": "🚀巧计线路"
+            "name": "巧计线路"
         }
     ]
 }
