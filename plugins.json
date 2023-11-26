@@ -17,7 +17,7 @@
 		},
 		{
 			"name": "酷我",
-			"url": "https://cdn.jsdelivr.net/gh/Ulinuxs/tvboxsource/plugins/kuwo.js",
+			"url": "https://cdn.jsdelivr.net/gh/Ulinuxs/Source/plugins/kuwo.js",
 			"version": "0.1.17"
 		},
 		{
@@ -57,7 +57,7 @@
 		},
 		{
 			"name": "QQ音乐",
-			"url": "https://cdn.jsdelivr.net/gh/Ulinuxs/tvboxsource/plugins/QQMusic.js",
+			"url": "https://cdn.jsdelivr.net/gh/Ulinuxs/Source/plugins/QQMusic.js",
 			"version": "0.1.10"
 		}
 	]
