@@ -2,6 +2,7 @@
 	"plugins":
 	[
 		{"name":"5sing","url":"https://cdn.jsdelivr.net/gh/Ulinuxs/tvboxsource/plugins/5Sing.js","version":"0.1.0"},
+		{"name":"快手","url":"https://cdn.jsdelivr.net/gh/Ulinuxs/tvboxsource/plugins/kuaishou.js"},
 		{"name":"bilibili","url":"https://cdn.jsdelivr.net/gh/Ulinuxs/tvboxsource/plugins/BiliBili.js","version":"0.1.6"},
 		{"name":"酷我","url":"https://cdn.jsdelivr.net/gh/Ulinuxs/tvboxsource/plugins/Kuwo.js","version":"0.1.17"},
 		{"name":"酷狗","url":"https://cdn.jsdelivr.net/gh/Ulinuxs/tvboxsource/plugins/Kugou.js","version":"0.1.3"},
