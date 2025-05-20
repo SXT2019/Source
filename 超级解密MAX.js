@@ -471,19 +471,21 @@ const Aquarius = {
         }
 
         function jiamiCode(code) {
+        eval($.require("Aquarius").rely($.require("Aquarius").AESUtils));
             if (code != null && code != "") {
                 //转为字符串
                 code = code.toString();
                 //解密规则
                 var key = "hk6666666109";
                 code = code.replace("js:", "");
-                code = $.require("hiker://page/AESUtils") encrypt.(key, code);
-                code = "js:/n" + code;
+                code = encrypt(key, code);
+                code = "js:\nevalPrivateJS(\"" + code + "\");";
                 return code;
             }
         }
 
         function jiemiCode(code) {
+        eval($.require("Aquarius").rely($.require("Aquarius").AESUtils));
             if (code != null && code != "") {
                 //转为字符串
                 code = code.toString();
@@ -496,7 +498,7 @@ const Aquarius = {
                     if (/evalPrivateJS\(['"]([^"']+)['"]\)/.test(code)) {
                         var c2 = code.match(/evalPrivateJS\(['"]([^"']+)['"]\)/)[1];
                         var yc2 = code.match(/evalPrivateJS\(['"]([^"']+)['"]\);?/)[0];
-                        c2 = $.require("hiker://page/AESUtils").decrypt(key, c2);
+                        c2 = decrypt(key, c2);
                         code = code.replace(yc2, c2);
                     }
                 } while (/evalPrivateJS\(['"]([^"']+)['"]\)/.test(code))
