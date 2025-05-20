@@ -45,6 +45,42 @@ const Aquarius = {
                 col_type: "text_icon"
             });
         }
+        d.push({
+            title: "类型：" + getItem("typeName", "默认"),
+            url: $().lazyRule(() => {
+                return "toast://暂不可用";
+            }),
+            col_type: "icon_2_round",
+            pic_url: "hiker://images/icon_menu6",
+            extra: {
+                id: "yunType"
+            }
+        }, {
+            title: "模式：" + getItem("filterName", "解密"),
+            url: "select://" + JSON.stringify({
+                title: "过滤模式设置",
+                options: ["模式：加密", "模式：解密"],
+                col: 2,
+                js: $.toString(() => {
+                    input = input.replace("模式：", "");
+                    if (input == "加密") {
+                        setItem("model", "jiami")
+                        setItem("filterName", "加密")
+                    } else if (input == "解密") {
+                        setItem("model", "解密");
+                        setItem("filterName", "解密")
+                    }
+                    updateItem("filterType", {
+                        title: "模式：" + input
+                    });
+                })
+            }),
+            col_type: "icon_2_round",
+            pic_url: "hiker://images/icon_setting6",
+            extra: {
+                id: "filterType"
+            }
+        });
         //本地文件读取
         d.push({
             title: "选择文件",
@@ -109,7 +145,6 @@ const Aquarius = {
                         }
                         code = fetch(code);
                     }
-
                     //使用更完善的判断方式
                     if (code.trim().startsWith("云")) {
                         code = parsePaste(code);
@@ -427,9 +462,28 @@ const Aquarius = {
         }
     }),
     filterReplace: $.toString(() => {
-        //处理代码违禁词的方法
         function replaceCode(code) {
-            eval($.require("Aquarius").rely($.require("Aquarius").AESUtils));
+            if (getItem("model", "jiemi") == "jiami") {
+                return jiamiCode(code);
+            } else if ("model", "jiemi" == "jiemi") {
+                return jiemiCode(code);
+            }
+        }
+
+        function jiamiCode(code) {
+            if (code != null && code != "") {
+                //转为字符串
+                code = code.toString();
+                //解密规则
+                var key = "hk6666666109";
+                code = code.replace("js:", "");
+                code = $.require("hiker://page/AESUtils") encrypt.(key, code);
+                code = "js:/n" + code;
+                return code;
+            }
+        }
+
+        function jiemiCode(code) {
             if (code != null && code != "") {
                 //转为字符串
                 code = code.toString();
@@ -442,7 +496,7 @@ const Aquarius = {
                     if (/evalPrivateJS\(['"]([^"']+)['"]\)/.test(code)) {
                         var c2 = code.match(/evalPrivateJS\(['"]([^"']+)['"]\)/)[1];
                         var yc2 = code.match(/evalPrivateJS\(['"]([^"']+)['"]\);?/)[0];
-                        c2 = decrypt(key, c2);
+                        c2 = $.require("hiker://page/AESUtils").decrypt(key, c2);
                         code = code.replace(yc2, c2);
                     }
                 } while (/evalPrivateJS\(['"]([^"']+)['"]\)/.test(code))
