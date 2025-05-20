@@ -130,7 +130,7 @@ const Aquarius = {
             }
         });
         d.push({
-            title: "解密",
+            title: "转换",
             url: $().lazyRule(() => {
                 try {
                     var code = getMyVar("code");
