@@ -7,6 +7,7 @@ const Aquarius = {
         return data.match(/\{([\s\S]*)\}/)[0].replace(/\{([\s\S]*)\}/, '$1')
     },
     home: () => {
+        var d = Aquarius.d;
         if(Aquarius.Enable=="0"){
             d.push({
                 title:"跑路了",
@@ -17,7 +18,6 @@ const Aquarius = {
             })
             setResult(d);
         }
-        var d = Aquarius.d;
         //获取剪贴板内容 代码来自：云盘君.简
         function getClipboardText() {
             try {
