@@ -1,7 +1,7 @@
 const Aquarius = {
     d: [],
     author: "三鲜汤",
-    version: "20250520",
+    version: "20250523",
     rely: (data) => {
         return data.match(/\{([\s\S]*)\}/)[0].replace(/\{([\s\S]*)\}/, '$1')
     },
