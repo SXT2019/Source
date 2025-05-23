@@ -3,6 +3,7 @@ const Aquarius = {
     author: "三鲜汤",
     version: "20250523",
     Enable:"1",
+    enableUpdate:"1",
     rely: (data) => {
         return data.match(/\{([\s\S]*)\}/)[0].replace(/\{([\s\S]*)\}/, '$1')
     },
@@ -17,6 +18,15 @@ const Aquarius = {
                 col_type:"text_center_1"
             })
             setResult(d);
+        }
+        //强制更新
+        if(enableUpdate=="1"&&getItem("version"，"")!=Aquarius.version){
+            showLoading('检测到新版本，更新中...')
+        writeFile('hiker://files/rules/Aquarius/' + MY_RULE.title + '.js', fetch(getMyVar('github_url') + base64Decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1NYVDIwMTkvU291cmNlL3JlZnMvaGVhZHMvbWFpbi8=') + MY_RULE.title + '.js'));
+        java.lang.Thread.sleep(2000);
+        hideLoading()
+            setItem("version",Aquarius.version);
+        toast('更新完成！')
         }
         //获取剪贴板内容 代码来自：云盘君.简
         function getClipboardText() {
