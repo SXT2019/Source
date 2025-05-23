@@ -2,10 +2,21 @@ const Aquarius = {
     d: [],
     author: "三鲜汤",
     version: "20250523",
+    Enable:"0"， 
     rely: (data) => {
         return data.match(/\{([\s\S]*)\}/)[0].replace(/\{([\s\S]*)\}/, '$1')
     },
     home: () => {
+        if(Aquarius.Enable=="0"){
+            d.push({
+                title:"跑路了",
+                url:$()。lazyRule(()=>{
+                    return "toast://跑路了"
+                }),
+                col_type:"text_center_1"
+            })
+            setResult(d);
+        }
         var d = Aquarius.d;
         //获取剪贴板内容 代码来自：云盘君.简
         function getClipboardText() {
