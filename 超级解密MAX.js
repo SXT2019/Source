@@ -20,7 +20,7 @@ const Aquarius = {
             setResult(d);
         }
         //强制更新
-        if(enableUpdate=="1"&&getItem("version","")!=Aquarius.version){
+        if(Aquarius.enableUpdate=="1"&&getItem("version","")!=Aquarius.version){
             showLoading('检测到新版本，更新中...')
         writeFile('hiker://files/rules/Aquarius/' + MY_RULE.title + '.js', fetch(getMyVar('github_url') + base64Decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1NYVDIwMTkvU291cmNlL3JlZnMvaGVhZHMvbWFpbi8=') + MY_RULE.title + '.js'));
         java.lang.Thread.sleep(2000);
