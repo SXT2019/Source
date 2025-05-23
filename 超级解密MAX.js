@@ -10,7 +10,7 @@ const Aquarius = {
         if(Aquarius.Enable=="0"){
             d.push({
                 title:"跑路了",
-                url:$()。lazyRule(()=>{
+                url:$().lazyRule(()=>{
                     return "toast://跑路了"
                 }),
                 col_type:"text_center_1"
