@@ -1,32 +1,50 @@
 const Aquarius = {
     d: [],
     author: "三鲜汤",
-    version: "20250523",
-    Enable:"1",
-    enableUpdate:"1",
+    version: "20250527",
     rely: (data) => {
         return data.match(/\{([\s\S]*)\}/)[0].replace(/\{([\s\S]*)\}/, '$1')
     },
     home: () => {
         var d = Aquarius.d;
-        if(Aquarius.Enable=="0"){
+        if (!storage0.getItem('githubapi')) {
+            let github_url = 'https://github-mirror.xiaoxuan6.me/api/urls';
+            let github_data = JSON.parse(fetch(github_url)).data;
+            storage0.setItem('githubapi', github_data)
+        }
+        if (getMyVar('github_url') == '') {
+            for (let item of storage0.getItem('githubapi')) {
+                let data = JSON.parse(fetch(item, {
+                    withStatusCode: true,
+                    timeout: 5000,
+                }));
+                if (data.statusCode == 200) {
+                    putMyVar('github_url', item + '/');
+                    break;
+                }
+            }
+        }
+        var config = fetch(getMyVar('github_url') + base64Decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1NYVDIwMTkvU291cmNlL3JlZnMvaGVhZHMvbWFpbi8=') + MY_RULE.title + '_config.txt')
+        var enable = config.enable;
+        var enableUpdate = config.enableUpdate;
+        if (enable == "0") {
             d.push({
-                title:"跑路了",
-                url:$().lazyRule(()=>{
+                title: "跑路了",
+                url: $().lazyRule(() => {
                     return "toast://跑路了"
                 }),
-                col_type:"text_center_1"
+                col_type: "text_center_1"
             })
             setResult(d);
         }
         //强制更新
-        if(Aquarius.enableUpdate=="1"&&getItem("version","")!=Aquarius.version){
+        if (enableUpdate == "1" && getItem("version", "") != Aquarius.version) {
             showLoading('检测到新版本，更新中...')
-        writeFile('hiker://files/rules/Aquarius/' + MY_RULE.title + '.js', fetch(getMyVar('github_url') + base64Decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1NYVDIwMTkvU291cmNlL3JlZnMvaGVhZHMvbWFpbi8=') + MY_RULE.title + '.js'));
-        java.lang.Thread.sleep(2000);
-        hideLoading()
-            setItem("version",Aquarius.version);
-        toast('更新完成！')
+            writeFile('hiker://files/rules/Aquarius/' + MY_RULE.title + '.js', fetch(getMyVar('github_url') + base64Decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1NYVDIwMTkvU291cmNlL3JlZnMvaGVhZHMvbWFpbi8=') + MY_RULE.title + '.js'));
+            java.lang.Thread.sleep(2000);
+            hideLoading()
+            setItem("version", Aquarius.version);
+            toast('更新完成！')
         }
         //获取剪贴板内容 代码来自：云盘君.简
         function getClipboardText() {
@@ -492,7 +510,7 @@ const Aquarius = {
         }
 
         function jiamiCode(code) {
-        eval($.require("Aquarius").rely($.require("Aquarius").AESUtils));
+            eval($.require("Aquarius").rely($.require("Aquarius").AESUtils));
             if (code != null && code != "") {
                 //转为字符串
                 code = code.toString();
@@ -506,7 +524,7 @@ const Aquarius = {
         }
 
         function jiemiCode(code) {
-        eval($.require("Aquarius").rely($.require("Aquarius").AESUtils));
+            eval($.require("Aquarius").rely($.require("Aquarius").AESUtils));
             if (code != null && code != "") {
                 //转为字符串
                 code = code.toString();

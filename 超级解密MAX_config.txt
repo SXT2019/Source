@@ -1,0 +1,4 @@
+{
+"enable":"1",
+"enableUpdate":"0"
+}
