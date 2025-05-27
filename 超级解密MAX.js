@@ -24,9 +24,12 @@ const Aquarius = {
                 }
             }
         }
-        var config = fetch(getMyVar('github_url') + base64Decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1NYVDIwMTkvU291cmNlL3JlZnMvaGVhZHMvbWFpbi8=') + MY_RULE.title + '_config.txt')
+        var config = JSON.parse(fetch(getMyVar('github_url') + base64Decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1NYVDIwMTkvU291cmNlL3JlZnMvaGVhZHMvbWFpbi8=') + MY_RULE.title + '_config.txt'));
+        log(config)
         var enable = config.enable;
+        log(enable)
         var enableUpdate = config.enableUpdate;
+        log(enableUpdate)
         if (enable == "0") {
             d.push({
                 title: "跑路了",
