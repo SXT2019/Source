@@ -25,11 +25,8 @@ const Aquarius = {
             }
         }
         var config = JSON.parse(fetch(getMyVar('github_url') + base64Decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1NYVDIwMTkvU291cmNlL3JlZnMvaGVhZHMvbWFpbi8=') + MY_RULE.title + '_config.txt'));
-        log(config)
         var enable = config.enable;
-        log(enable)
         var enableUpdate = config.enableUpdate;
-        log(enableUpdate)
         if (enable == "0") {
             d.push({
                 title: "跑路了",
@@ -47,7 +44,8 @@ const Aquarius = {
             java.lang.Thread.sleep(2000);
             hideLoading()
             setItem("version", Aquarius.version);
-            toast('更新完成！')
+            toast('更新完成！');
+            refreshPage();
         }
         //获取剪贴板内容 代码来自：云盘君.简
         function getClipboardText() {
