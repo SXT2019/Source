@@ -27,6 +27,7 @@ const Aquarius = {
         var config = JSON.parse(fetch(getMyVar('github_url') + base64Decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1NYVDIwMTkvU291cmNlL3JlZnMvaGVhZHMvbWFpbi8=') + MY_RULE.title + '_config.txt'));
         var enable = config.enable;
         var enableUpdate = config.enableUpdate;
+        var ver = config.version;
         if (enable == "0") {
             d.push({
                 title: "跑路了",
@@ -38,7 +39,7 @@ const Aquarius = {
             setResult(d);
         }
         //强制更新
-        if (enableUpdate == "1") {
+        if (ver != Aquarius.version && enableUpdate == "1") {
             showLoading('检测到新版本，更新中...')
             writeFile('hiker://files/rules/Aquarius/' + MY_RULE.title + '.js', fetch(getMyVar('github_url') + base64Decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1NYVDIwMTkvU291cmNlL3JlZnMvaGVhZHMvbWFpbi8=') + MY_RULE.title + '.js'));
             java.lang.Thread.sleep(2000);
