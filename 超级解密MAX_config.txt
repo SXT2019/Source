@@ -1,4 +1,5 @@
 {
 "enable":"1",
-"enableUpdate":"0"
+"enableUpdate":"0",
+"version":20250529
 }
