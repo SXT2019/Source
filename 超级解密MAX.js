@@ -179,7 +179,7 @@ const Aquarius = {
                         return "toast://请输入需要解析的规则！";
                     }
                     //支持远程url及本地url
-                    if (code.startsWith("http://") || code.startsWith("https://") || code.startsWith("file://") || code.startsWith("/storage") || code.startsWith("/sdcard")) {
+                    if (code.startsWith("http://") || code.startsWith("https://") || code.startsWith("file://") || code.startsWith("/storage") || code.startsWith("/sdcard") || code.startsWith("hiker://files")) {
                         if (code.startsWith("/storage") || code.startsWith("/sdcard")) {
                             code = "file://" + code;
                         }
